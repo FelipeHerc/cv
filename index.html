@@ -1,0 +1,1155 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Felipe Hercules de Almeida Oliveira</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 13px;
+    color: #40484f;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.46153846;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+}
+
+p {
+    display: block;
+    margin-bottom: 1.3em;
+}
+
+a {
+    color: #0095ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0c65a5;
+    text-decoration: underline;
+}
+
+ul {
+    margin-top: 1rem;
+}
+
+li {
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 1.3em;
+}
+
+.highlights>li>p {
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.67rem;
+}
+
+h3 {
+    font-size: 1.27rem;
+}
+
+em {
+    color: #757575;
+}
+
+blockquote {
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* main container */
+
+#resume {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* every section wrapper */
+
+.section {
+    margin-bottom: 1rem;
+}
+
+section .location {
+    margin-right: .5em;
+    color: #606d76;
+    font-weight: 700;
+}
+
+#contact {
+    margin-top: .5rem;
+}
+
+#profiles .item {
+    padding: 0;
+}
+
+#header>#profiles,
+#header>#contact,
+#skills,
+#languages,
+#interests {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+#header>div {
+    line-height: 1.5;
+}
+
+#header>div>div {
+    margin-right: 1.2em;
+}
+
+#header h1.name {
+    font-size: 2.8rem;
+    font-weight: 100;
+    line-height: 100%;
+}
+
+#header h2.label {
+    color: #202931;
+    font-size: 1.47rem;
+    font-weight: 300;
+}
+
+#header .picture {
+    width: 11em;
+    float: right;
+    border-radius: 4px;
+}
+
+.main-summary {
+    background: #f1f8ff;
+    padding: 1.2em 1em;
+    margin-top: 1rem;
+}
+
+.main-summary p {
+    margin: .15em 0 0;
+}
+
+h2.section-title {
+    display: inline-block;
+    background: #fff;
+    padding: 0 1em 0.3em 0;
+    color: #ff6d1f;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    font-size: .9rem;
+}
+
+.section>header {
+    position: relative;
+}
+
+.fa {
+    margin-right: 0.25em;
+}
+
+.section>header::after {
+    position: absolute;
+    left: 0;
+    top: .7em;
+    height: 1px;
+    background: #ccc;
+    content: "";
+    width: 100%;
+    z-index: -100;
+    display: block;
+}
+
+.section.main-summary>section {
+    margin: 0;
+}
+
+.section>section>header {
+    font-size: 1.38rem;
+    position: relative;
+    margin-top: .7em;
+}
+
+.section>section>header:first-of-type {
+    margin: 0;
+}
+
+.section>section>header .space-left {
+    position: absolute;
+    left: -1.56rem;
+    top: 5px;
+    color: #aaa;
+    line-height: 1;
+    opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+    display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+    font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+    content: "at "
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+    color: #606d76;
+    font-weight: 400;
+}
+
+.section header .date {
+    font-size: 1rem;
+    display: inline-table;
+    padding: .1em 0;
+    font-weight: 600;
+}
+
+ul.keywords,
+ul.courses {
+    margin-top: .5em;
+}
+
+ul.keywords li,
+ul.courses li {
+    display: inline-block;
+    margin: 2px 2px 2px 0;
+    padding: 4px 5px 5px;
+    font-size: .9rem;
+    line-height: 1;
+    text-transform: lowercase;
+    color: #3e6d8e;
+    background-color: #dfeaf1;
+    border: 0 solid #dfeaf1;
+    white-space: nowrap;
+}
+
+ul.keywords li:hover,
+ul.courses li:hover {
+    background: #dfeaf0;
+}
+
+.item {
+    padding: .5em 0;
+}
+
+.gpa {
+    padding-bottom: .5em;
+}
+
+.fa.social {
+    font-size: 1.1em;
+}
+
+
+/* Social Media Brand Colors */
+
+.google-plus {
+    color: #dd4b39;
+}
+
+.tumblr {
+    color: #32506d;
+}
+
+.foursquare {
+    color: #0072b1;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.linkedin {
+    color: #007bb6;
+}
+
+.pinterest {
+    color: #cb2027;
+}
+
+.dribbble {
+    color: #ea4c89;
+}
+
+.instagram {
+    color: #517fa4;
+}
+
+.twitter {
+    color: #00aced;
+}
+
+.soundcloud {
+    color: #ff3a00;
+}
+
+.wordpress {
+    color: #21759b;
+}
+
+.youtube {
+    color: #bb0000;
+}
+
+.github {
+    color: #171515;
+}
+
+.stack-overflow {
+    color: #828386;
+    position: relative;
+}
+
+.flickr {
+    color: #ff0084;
+}
+
+.stack-overflow::after {
+    position: absolute;
+    left: 0;
+    content: '\f16c';
+    color: #f68a1f;
+    overflow: hidden;
+    height: 100%;
+}
+
+.telegram {
+    color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+    width: 15em;
+    padding: 0 .5em .5em 0;
+    border-bottom: none;
+}
+
+#skills .item {
+    width: 16em;
+}
+
+#skills .item .keywords {
+    width: 15em;
+}
+
+
+/* Skill chart */
+
+.level {
+    margin-bottom: .5em;
+}
+
+.level .bar {
+    border: 1px solid #ddd;
+    display: block;
+    width: 10em;
+    height: 5px;
+    position: relative;
+}
+
+.level .bar::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    background: black;
+    height: 5px;
+}
+
+.level.beginner .bar::after {
+    background: #EB5F51;
+    width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+    background: #ffdf1f;
+    width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+    background: #5CB85C;
+    width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+    background: #59C596;
+    width: 10em;
+}
+
+#references .item {
+    padding-left: .5em;
+    border-left: 5px solid #ff6d1f;
+}
+
+.toggle-item {
+  visibility: hidden;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.display {
+    display: block;
+    opacity: 1 !important;
+}
+
+.margin1 {
+    margin-bottom: .5rem;
+}
+
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+    #resume {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+    li {
+        margin-left: 1.5em;
+    }
+    #resume {
+        width: 820px;
+        margin: 2rem auto;      
+    }
+    .section>section>header .space-left {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .section>section {
+        margin-left: 1.67rem;
+    }
+    .toggle-item {
+        transform: translate(-9999px);
+    }
+    .toggle-item+label {
+        display: block;
+        margin-top: -16px;
+    }
+    .toggle-item:checked+label:after {
+        content: '\f0d7';
+    }
+    .toggle-item+label:after {
+        float: left;
+        cursor: pointer;
+        margin-left: -20px;
+        color: #aaa;
+        font-size: 16px;
+        content: '\f0da';
+        font-family: Fontawesome;
+    }
+    .toggle-item~.item {
+        height: 0;
+        opacity: 0;
+    }
+    .toggle-item:checked~.item {
+        height: auto;
+        opacity: 1;
+        transition: all .5s linear;
+    }
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+        content: "| ";
+    }
+    .header-left {
+        float: left;
+        width: 70%;
+        word-break: normal;
+    }
+    .section header .date {
+        float: right;
+        padding: .2em;
+    }
+    .display {
+        display: none;
+    }
+    .display:not(.none) {
+        display: block;
+    }
+}
+
+@media print {
+    #resume {
+        margin: 0;
+        padding: 0;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        line-height: 1.3;
+        /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
+    }
+    @page {
+        margin: 1cm 1.4cm;
+    }
+    .item-count {
+        display: none;
+    }
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+        content: "at ";
+    }
+    .main-summary {
+        padding: 2rem 0;
+    }
+    .section {
+        margin: .8rem 0;
+        padding: 0;
+    }
+    .section header {
+        padding-bottom: .15rem;
+    }
+    .section .location {
+        padding-bottom: .15rem;
+    }
+    .stack-overflow::after {
+        content: "";
+    }
+    .fa.social {
+        color: #828386;
+    }
+    ul {
+        margin-top: .4em;
+    }
+    ul,
+    li {
+        padding: 0;
+    }
+    ul.keywords li,
+    ul.courses li {
+        margin: 0;
+        padding: 0;
+        font-size: .8rem;
+        text-transform: lowercase;
+    }
+    ul.keywords li::after,
+    ul.courses li::after {
+        padding: 0 0 0 .1rem;
+        content: " |";
+    }
+    ul.keywords::before,
+    ul.courses::before {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+    ul.keywords::before {
+        content: "Skills acquired: ";
+    }
+    #skills .keywords::before {
+        content: '';
+    }
+    .section p {
+        margin: 0;
+        padding: 0;
+    }
+    ul.courses::before {
+        content: "Major courses: ";
+    }
+    ul.keywords li:last-of-type::after,
+    ul.courses li:last-of-type::after {
+        content: "";
+    }
+    .level em {
+        font-style: normal;
+        padding: .1em 0;
+    }
+    .level .bar {
+        display: none;
+    }
+    #profiles .item {
+        padding: 0;
+    }
+    .item.display {
+        display: block;
+        opacity: 1 !important;
+    }
+}
+
+  </style>
+  
+  </head>
+  <body>
+  
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<div>
+    			<h1 class="name">Felipe Hercules de Almeida Oliveira</h1>
+    			<h2 class="label">Desenvolvedor</h2>
+    		</div>
+    		
+    		<span class="location">
+    			<span class="address">Rua Elizabeth Aparecida Danza, 124,</span> 
+    			<span class="postalCode">37705-030,</span> 
+    			<span class="city">Poços de Caldas,</span> 
+    			<span class="region">Minas Gerais</span> 
+    			<span class="countryCode">BR</span> 
+    		</span>
+    		
+    
+    		<div id="contact">
+    			<div class="email">
+    				<span class="fa fa-envelope-o"></span>
+    				<a href="mailto:hercrof@gmail.com">hercrof@gmail.com</a>
+    			</div>
+    			<div class="phone">
+    				<span class="fa fa-mobile"></span>
+    				<a href="tel:(35) 99152-7935">(35) 99152-7935</a>
+    			</div>
+    		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-github github social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://github.com/FelipeHerc">FelipeHerc</a>
+    					</span> 
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-facebook facebook social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.facebook.com/FelipeHerc">FelipeHerc</a>
+    					</span> 
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    	<section class="section main-summary">
+    		<section>
+    			<div><p>Nascido em Poços de Caldas, descobriu seus gostos pelas ciências lógico-matemáticas logo cedo. Graduado em Ciência da Computação pela PUC, encontrou suas áreas de interesse dentro do mercado de trabalho logo no começo da faculdade. Seus gostos variam bastante, desde música até mecânica quântica. Não medirá esforços caso tenha que lhe ensinar algo que sabe, e jamais irá negar uma xícara de qualquer bebida extremamente cafeinada.</p></div>
+    		</section>
+    	</section>
+    
+    <section class="section margin1">
+    	<header>
+    		<h2 class='section-title'>Skills</h2>
+    	</header>
+    	<section id="skills">
+    		<div class="item">
+    			<h3 class="name">
+    				BackEnd
+    			</h3>
+    			<ul class="keywords">
+    				<li>Ruby on Rails</li>
+    				<li>NodeJS</li>
+    				<li>PHP</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				FrontEnd
+    			</h3>
+    			<ul class="keywords">
+    				<li>Reactjs</li>
+    				<li>VueJS</li>
+    				<li>Haml</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Infra
+    			</h3>
+    			<ul class="keywords">
+    				<li>Docker</li>
+    				<li>AWS</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Mobile
+    			</h3>
+    			<ul class="keywords">
+    				<li>react native</li>
+    				<li>expo</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				BI
+    			</h3>
+    			<ul class="keywords">
+    				<li>Data Studio</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Agile
+    			</h3>
+    			<ul class="keywords">
+    				<li>Scrum</li>
+    				<li>TDD</li>
+    				<li>pair programming</li>
+    				<li>CI</li>
+    			</ul>
+    		</div>
+    	</section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Experiência Profissional <span class="item-count">(3)</span></h2>
+      </header>
+    
+      <section id="work">
+        <section class="work-item">
+    
+            <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
+            <label for="work-item-0"></label>
+    
+    			<header>
+    				<div class="position">Desenvolvedor</div>
+    				<div class="company">Medsystem</div>
+    				<div class="date">
+    				  <span class="startDate">Agosto, 2017</span> 
+    					<span class="endDate"> - Maio, 2019</span> 
+    				</div>
+    			</header>
+    			
+    			<span class="location">
+    				<span class="fa fa-map-marker"></span> 
+    				<span class="city">Poços de Caldas,</span>
+    				<span class="countryCode">(MG)</span> 
+    			</span>
+        	<span class="website">
+        		<a target="_blank" href="http://www.medsystem.com.br">http://www.medsystem.com.br</a>
+        	</span>      	<div class="item" id="work-item">
+            <div class="summary">
+              <p><p>Desenvolvimento e manutenção de softwares utilizados na área da saúde, como consultórios, laboratórios e clínicas de medicina do trabalho.</p></p>
+            </div>
+            <ul class="highlights">
+                <li><p>Desenvolvimento e correções em aplicações desktop</p></li>
+                <li><p>Conversões de bases de dados de clientes que utilizavam sistemas concorrentes</p></li>
+                <li><p>Criação e otimização de dashboards BI para clientes</p></li>
+            </ul>
+        	</div>
+        </section>
+        <section class="work-item">
+    
+            <input id="work-item-1" type="checkbox" class="toggle-item" />
+            <label for="work-item-1"></label>
+    
+    			<header>
+    				<div class="position">Desenvolvedor</div>
+    				<div class="company">Ateliê de Software (Vagas)</div>
+    				<div class="date">
+    				  <span class="startDate">Maio, 2019</span> 
+    					<span class="endDate"> - Novembro, 2019</span> 
+    				</div>
+    			</header>
+    			
+    			<span class="location">
+    				<span class="fa fa-map-marker"></span> 
+    				<span class="city">São Paulo,</span>
+    				<span class="countryCode">(SP)</span> 
+    			</span>
+        	<span class="website">
+        		<a target="_blank" href="https://www.vagas.com.br">https://www.vagas.com.br</a>
+        	</span>      	<div class="item" id="work-item">
+            <div class="summary">
+              <p><p>Desenvolvimento e melhorias no processo de cadastro para empresas contratantes, coleta de métricas de utilização dos clientes</p></p>
+            </div>
+            <ul class="highlights">
+                <li><p>Desenvolvimento de novas funcionalidades para a plataforma</p></li>
+                <li><p>Coleta e análise de métricas de utilização via GTM</p></li>
+            </ul>
+        	</div>
+        </section>
+        <section class="work-item">
+    
+            <input id="work-item-2" type="checkbox" class="toggle-item" />
+            <label for="work-item-2"></label>
+    
+    			<header>
+    				<div class="position">Desenvolvedor</div>
+    				<div class="company">Ateliê de Software (Conlicitação)</div>
+    				<div class="date">
+    				  <span class="startDate">Novembro, 2019</span> 
+    					<span class="endDate"> - Atualmente</span> 
+    				</div>
+    			</header>
+    			
+    			<span class="location">
+    				<span class="fa fa-map-marker"></span> 
+    				<span class="city">São Paulo,</span>
+    				<span class="countryCode">(SP)</span> 
+    			</span>
+        	<span class="website">
+        		<a target="_blank" href="https://conlicitacao.com.br">https://conlicitacao.com.br</a>
+        	</span>      	<div class="item" id="work-item">
+            <div class="summary">
+              <p><p>Atuação no desenvolvimento e manutenção da plataforma e vários sistemas internos, garantindo a qualidade do serviço entregue ao cliente. Empresa focada no segmento de mercado de licitações governamentais</p></p>
+            </div>
+            <ul class="highlights">
+                <li><p>Troca do gateway de pagamento utilizado para transações de cartão de crédito de erede para cielo</p></li>
+                <li><p>Troca do gateway para geração de boletos de shopline para banco do brasil</p></li>
+                <li><p>Desenvolvimento de um sistema de assinatura via recompra</p></li>
+                <li><p>Melhorias no desempenho de diversos projetos webcrawlers garantindo a extração de diversos chats de pregões eletrônicos em tempo real de diversos portais do governo</p></li>
+            </ul>
+        	</div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Voluntário</h2>
+      </header>
+      <section id="volunteer">
+        <section class="volunteer-item">
+    
+            <input id="volunteer-item-0" type="checkbox" class="toggle-item" checked="checked" />
+            <label for="volunteer-item-0"></label>
+    
+          <header>
+            <div class="header-left">
+              <div class="position">
+                Instrutor
+              </div>
+              <div class="organization">
+                Pontifícia Universidade Católica
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+              Maio, 2020
+              </span>
+              <span class="endDate">
+              - Maio, 2020
+              </span>
+            </div>
+          </header>
+          <div class="item">
+            <div class="summary">
+              <p><p>Instrutor de um webinar focado na introdução ao desenvolvimento web utilizando html, css, js, bootstrap, jQuery e versionamento via git para alunos do segundo período do curso de Ciência da Computação da PUC</p></p>
+            </div>
+            <ul class="highlights">
+              <li><p>Criação do plano de aula, materiais de referência e exercícios</p></li>
+              <li><p>Auxílio na configuração do ambiente de desenvolvimento para os alunos</p></li>
+              <li><p>Apresentação das aulas e esclarecimento de dúvidas</p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Educação</h2>
+      </header>
+    
+      <section id="education">
+        <section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="studyType">
+                Bacharelado
+              </div>
+              <div class="area">
+                Ciência da Computação
+              </div>
+              <div class="institution">
+                Pontifícia Universidade Católica de Minas Gerais
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+              2015
+              </span>
+              <span class="endDate">
+              - 2019
+              </span>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section margin1">
+      <header>
+        <h2 class='section-title'>Idiomas</h2>
+      </header>
+      <section id="languages">
+        <div class="display">
+          <h3 class="language">
+            Português
+          </h3>
+          <div class="item">
+            <div class="level fluency native speaker">
+              <em>Nativo</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            Inglês
+          </h3>
+          <div class="item">
+            <div class="level fluency advanced">
+              <em>Avançado</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="section margin1">
+      <header>
+        <h2 class='section-title' class='section-title'>Interesses</h2>
+      </header>
+      <section id="interests">
+        <div class="item">
+          <h3 class="name">
+            Música
+          </h3>
+          <ul class="keywords">
+            <li>Composição</li>
+            <li>Bandas</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Astronomia
+          </h3>
+          <ul class="keywords">
+            <li>Observação noturna</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Projetos DIY
+          </h3>
+          <ul class="keywords">
+            <li>Eletrônica</li>
+            <li>Marcenaria</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Referências</h2>
+      </header>
+      <section id="references">
+        <div class="item">
+          <blockquote class="reference">
+            &#8220;&#32;O universo não foi feito à medida do ser humano, mas tampouco lhe é adverso: é-lhe indiferente.&#32;&#8221;
+          </blockquote>
+          <div class="name">
+            Carl Sagan
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </body>
+</html>

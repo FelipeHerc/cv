@@ -1,0 +1,201 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Felipe Hercules de Almeida Oliveira",
+    "label": "Desenvolvedor",
+    "image": "",
+    "email": "hercrof@gmail.com",
+    "phone": "(35) 99152-7935",
+    "summary": "Nascido em Poços de Caldas, descobriu seus gostos pelas ciências lógico-matemáticas logo cedo. Graduado em Ciência da Computação pela PUC, descobriu suas áreas de interesse dentro do mercado de trabalho logo no começo da faculdade. Seus gostos variam bastante, desde música até mecânica quântica. Não medirá esforços caso tenha que lhe ensinar algo que sabe, e jamais irá negar uma xícara de qualquer bebida extremamente cafeinada.",
+    "location": {
+      "address": "Rua Elizabeth Aparecida Danza, 124",
+      "postalCode": "37705-030",
+      "city": "Poços de Caldas",
+      "countryCode": "BR",
+      "region": "Minas Gerais"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "FelipeHerc",
+        "url": "https://github.com/FelipeHerc"
+      },
+      {
+        "network": "FaceBook",
+        "username": "FelipeHerc",
+        "url": "https://www.facebook.com/FelipeHerc"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Medsystem",
+      "location": {
+        "city": "Poços de Caldas",
+        "countryCode": "MG"
+      },
+      "position": "Desenvolvedor",
+      "website": "http://www.medsystem.com.br",
+      "startDate": "Agosto, 2017",
+      "endDate": "Maio, 2019",
+      "summary": "Desenvolvimento e manutenção de softwares utilizados na área da saúde, como consultórios, laboratórios e clínicas de medicina do trabalho.",
+      "highlights": [
+        "Desenvolvimento e correções em aplicações desktop",
+        "Conversões de bases de dados de clientes que utilizavam sistemas concorrentes",
+        "Criação e otimização de dashboards BI para clientes"
+      ]
+    },
+    {
+      "company": "Ateliê de Software (Vagas)",
+      "location": {
+        "city": "São Paulo",
+        "countryCode": "SP"
+      },
+      "position": "Desenvolvedor",
+      "website": "https://www.vagas.com.br",
+      "startDate": "Maio, 2019",
+      "endDate": "Novembro, 2019",
+      "summary": "Desenvolvimento e melhorias no processo de cadastro para empresas contratantes, coleta de métricas de utilização dos clientes",
+      "highlights": [
+        "Desenvolvimento de novas funcionalidades para a plataforma",
+        "Coleta e análise de métricas de utilização via GTM"
+      ]
+    },
+    {
+      "company": "Ateliê de Software (Conlicitação)",
+      "location": {
+        "city": "São Paulo",
+        "countryCode": "SP"
+      },
+      "position": "Desenvolvedor",
+      "website": "https://conlicitacao.com.br",
+      "startDate": "Novembro, 2019",
+      "endDate": "Atualmente",
+      "summary": "Atuação no desenvolvimento e manutenção da plataforma e vários sistemas internos, garantindo a qualidade do serviço entregue ao cliente. Empresa focada no segmento de mercado de licitações governamentais",
+      "highlights": [
+        "Troca do gateway de pagamento utilizado para transações de cartão de crédito de erede para cielo",
+        "Troca do gateway para geração de boletos de shopline para banco do brasil",
+        "Desenvolvimento de um sistema de assinatura via recompra",
+        "Melhorias no desempenho de diversos projetos webcrawlers garantindo a extração de diversos chats de pregões eletrônicos em tempo real de diversos portais do governo"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Pontifícia Universidade Católica",
+      "position": "Instrutor",
+      "url": "https://www.pucpcaldas.br",
+      "startDate": "Maio, 2020",
+      "endDate": "Maio, 2020",
+      "summary": "Instrutor de um webinar focado na introdução ao desenvolvimento web utilizando html, css, js, bootstrap, jQuery e versionamento via git para alunos do segundo período do curso de Ciência da Computação da PUC",
+      "highlights": [
+        "Criação do plano de aula, materiais de referência e exercícios",
+        "Auxílio na configuração do ambiente de desenvolvimento para os alunos",
+        "Apresentação das aulas e esclarecimento de dúvidas"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Pontifícia Universidade Católica de Minas Gerais",
+      "url": "https://www.pucpcaldas.br",
+      "area": "Ciência da Computação",
+      "studyType": "Bacharelado",
+      "startDate": "2015-06-01",
+      "endDate": "2019-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "BackEnd",
+      "level": "Advanced",
+      "keywords": [
+        "Ruby on Rails",
+        "NodeJS",
+        "PHP"
+      ]
+    },
+    {
+      "name": "FrontEnd",
+      "level": "Advanced",
+      "keywords": [
+        "Reactjs",
+        "VueJS",
+        "Haml"
+      ]
+    },
+    {
+      "name": "Infra",
+      "level": "Intermediate",
+      "keywords": [
+        "Docker",
+        "AWS"     
+      ]
+    },
+    {
+      "name": "Mobile",
+      "level": "Intermediate",
+      "keywords": [
+        "react native", "expo"
+      ]
+    },
+    {
+      "name": "BI",
+      "level": "Advanced",
+      "keywords": [
+        "Data Studio"      ]
+    },
+    {
+      "name": "Agile",
+      "level": "Advanced",
+      "keywords": [
+        "Scrum",
+        "TDD",
+        "pair programming",
+        "CI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Português",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Inglês",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Música",
+      "keywords": [
+        "Composição",
+        "Bandas"
+      ]
+    },
+    {
+      "name": "Astronomia",
+      "keywords": [
+        "Observação noturna"      ]
+    },
+    {
+      "name": "Projetos DIY",
+      "keywords": [
+        "Eletrônica",
+        "Marcenaria"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Carl Sagan",
+      "reference": "O universo não foi feito à medida do ser humano, mas tampouco lhe é adverso: é-lhe indiferente."
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
